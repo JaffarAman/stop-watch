@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           background-image: linear-gradient(to top, #00416A ,#E4E5E6);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed;
+
+       }
+        .clock{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            
+        }
+        .clock div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* border: 1px solid black; */
+            text-align: center;
+            line-height: 60px;
+            margin: 0 20px;
+            font-size: large;
+            font-weight: bold;
+            border: none;
+            background-image: linear-gradient(to right ,  #20BDFF , #A5FECB);
+        }
+        .btns{
+            /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+        }
+        .btns div button{
+            margin: 30px 20px;
+            width: 100px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: red;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 5%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="clock">
+
+
+    <div >
+        <h1 id="min">00</h1>
+    </div>
+    <div>
+        <h1 id="sec">00</h1>
+    </div>
+    <div>
+        <h1 id="msec">00</h1>
+    </div>
+</section>
+<section class="btns">
+
+
+    <div>
+        <button onclick="start()" id="startBtn" dis>Start</button>
+    </div>
+
+    <div>
+        <button onclick="stopp()">Pause</button>
+    </div>
+
+    <div>
+        <button onclick="restart()">Reset</button>
+    </div>
+</section>
+</body>
+<script src="app.js"></script>
+</html>
